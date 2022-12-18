@@ -1,0 +1,90 @@
+*:focus {
+    outline: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('https://source.unsplash.com/1600x900/?nature,water');
+    
+    overflow: hidden;
+}
+.navbar{
+    display: flex;
+    position: fixed;
+    top: 5px;
+    width: 98vw;
+    height: 50px;
+    background-color: #000000c4;
+    border-radius:12px;
+    align-items: center;
+    justify-content: center;
+}
+
+.title{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.search{
+    width: 300px;
+    display: flex;
+    justify-content:space-evenly;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1c1c1cdb;
+    width: 100vw;
+    max-width: 300px;
+    padding: 2em;
+    font-family: 'Klee One', cursive;
+    border-radius: 30px;
+}
+
+.load{
+    display: none;
+}
+
+svg.bi.bi-search {
+    padding-top: 2px;
+}
+
+button {
+    border-radius: 16px;
+    border: none;
+    outline:0px;
+    height: 28px;
+    width: 30px;
+   background-color:  #a8a8a8b3;
+}
+.search-bar {
+    border-radius: 12px;
+    padding: 5px 8px;
+    border-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.search-bar:focus{
+    outline: none;
+}
+
+.weather{
+    color: white;
+}
+.city {
+    padding-top: 15px;
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+.temp{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 32px;
+    margin: 10px 0px;
+}
