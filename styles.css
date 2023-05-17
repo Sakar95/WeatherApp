@@ -9,6 +9,7 @@ body {
     justify-content: center;
     height: 100vh;
     background-image: url('https://source.unsplash.com/1600x900/?nature,water');
+    background-repeat: no-repeat;
     
     overflow: hidden;
 }
@@ -33,18 +34,18 @@ body {
 .search{
     width: 300px;
     display: flex;
-    justify-content:space-evenly;
+    justify-content:space-around;
 }
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #1c1c1cdb;
-    width: 100vw;
-    max-width: 300px;
-    padding: 2em;
+    /* width: 100vw; */
+    /* max-width: 300px; */
+    padding: 15px 25px;
     font-family: 'Klee One', cursive;
-    border-radius: 30px;
+    border-radius: 15px;
 }
 
 .load{
@@ -68,6 +69,7 @@ button {
     padding: 5px 8px;
     border-style: none;
     font-family: 'Poppins', sans-serif;
+    width: 80%;
 }
 
 .search-bar:focus{
@@ -88,3 +90,12 @@ button {
     font-size: 32px;
     margin: 10px 0px;
 }
+
+@media only screen and (max-width: 400px) {
+   .container{
+    width: 250px;
+   }
+   .search-bar{
+   width: 215px;
+   }
+  }
